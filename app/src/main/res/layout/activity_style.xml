@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+        tools:context="androidtown.org.myapplication.TodayStyle"
+        android:orientation="vertical"
+        android:background="@drawable/background2"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView
+            android:layout_height="51dp"
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:text="TODAY STYLE"
+            android:gravity="center"
+            android:layout_marginTop="8dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="59dp"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="20dp"
+                android:gravity="center|center_horizontal"
+                android:text="오늘의 옷은?"
+                android:textColor="#ffffff"
+                android:id="@+id/btn"
+                android:background="@drawable/buttonstyle"/>
+        </LinearLayout>
+        <ListView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/list"> </ListView>
+        <ImageView
+            android:layout_height="418dp"
+            android:layout_width="match_parent"
+            android:id="@+id/recom_image"
+            android:scaleType="fitCenter"/>
+</LinearLayout>
