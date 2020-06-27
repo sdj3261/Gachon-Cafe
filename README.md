@@ -1,2 +1,3 @@
 # TermProject
-Gachon University MP Termproject
+Gachon University SE Team8 project
+Cafe Reserve Order APP
