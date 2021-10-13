@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#000000"
+        android:text="Gachon Cafe"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#444444">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#ffffff">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/cafe2"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#208B4513"
+                android:text="Coffee"
+                android:gravity="center|center"
+                android:textSize="30dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginHorizontal="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/americano"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="아메리카노"
+                            android:textSize="25sp" />
+
+                        <CheckBox
+                            android:id = "@+id/check1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="테이크아웃"
+                            android:textSize="15sp"
+                            android:layout_gravity="right"/>
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/images" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:onClick="decrement"
+                                android:background="@drawable/minus" />
+
+                            <TextView
+                                android:id="@+id/quantity_number"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberSigned"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="15dp"
+                                android:text="0"
+                                android:textSize="25sp"
+                                android:textAlignment="center"/>
+
+                            <Button
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:elevation="8dp"
+                                android:onClick="increment"
+                                android:background="@drawable/plus"/>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/price_number"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="￦0"
+                                android:textSize="35sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="50dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/latte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="카페라떼"
+                android:textSize="25sp"/>
+
+            <CheckBox
+                android:id = "@+id/check2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="테이크아웃"
+                android:textSize="15sp"
+                android:layout_gravity="right"/>
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:src="@drawable/latte" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:onClick="SecDecrement"
+                    android:background="@drawable/minus"/>
+
+                <TextView
+                    android:id="@+id/quantity_number2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberSigned"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="15dp"
+                    android:text="0"
+                    android:textSize="25sp"
+                    android:textAlignment="center"/>
+
+                <Button
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:elevation="8dp"
+                    android:onClick="SecIncrement"
+                    android:background="@drawable/plus"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/price_number2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="￦0"
+                    android:textSize="35sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Cappuccino"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="카푸치노"
+                            android:textSize="25sp"/>
+
+                        <CheckBox
+                            android:id = "@+id/check3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="테이크아웃"
+                            android:textSize="15sp"
+                            android:layout_gravity="right"/>
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/cappuccino" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:onClick="Decrement3"
+                                android:background="@drawable/minus"/>
+
+                            <TextView
+                                android:id="@+id/quantity_number3"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberSigned"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="15dp"
+                                android:text="0"
+                                android:textAlignment="center"
+                                android:textSize="25sp" />
+
+                            <Button
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:elevation="8dp"
+                                android:onClick="Increment3"
+                                android:background="@drawable/plus"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/price_number3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="￦0"
+                                android:textSize="35sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="" />
+        </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#20ADFF2F"
+                android:text="Tea"
+                android:gravity="center|center"
+                android:textSize="30dp" />
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:layout_marginHorizontal="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/Camomile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="카모마일"
+                            android:textSize="25sp" />
+
+                        <CheckBox
+                            android:id = "@+id/check4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="테이크아웃"
+                            android:textSize="15sp"
+                            android:layout_gravity="right"/>
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/chamomile" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:onClick="Decrement4"
+                                android:background="@drawable/minus" />
+
+                            <TextView
+                                android:id="@+id/quantity_number4"
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:inputType="numberSigned"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="15dp"
+                                android:text="0"
+                                android:textSize="25sp"
+                                android:textAlignment="center"/>
+
+                            <Button
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:elevation="8dp"
+                                android:onClick="Increment4"
+                                android:background="@drawable/plus" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:id="@+id/price_number4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:text="￦0"
+                                android:textSize="35sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_weight="1"
+        android:text="Go to Cart"
+        android:textSize="25sp"
+        android:id = "@+id/order"
+        android:background="#cccccc"
+        />
+
+</LinearLayout>

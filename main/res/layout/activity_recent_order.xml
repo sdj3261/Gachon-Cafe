@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingBottom="30dp"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:background="#000000"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="구매내역"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="30dp"
+        android:orientation="vertical">
+    <TextView
+        android:id = "@+id/recent_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="최근 구매 이력이 없습니다."
+        android:textSize="17sp"
+        android:layout_gravity = "center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/recent_time"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="17sp"
+        android:layout_gravity = "center_horizontal"
+        android:text="최근 구매 이력이 없습니다." />
+
+    <TextView
+        android:id="@+id/recent_pay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="17sp"
+        android:layout_gravity = "center_horizontal"
+        android:text="최근 구매 이력이 없습니다." />
+
+    <TextView
+        android:id="@+id/recent_order1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="17sp"
+        android:layout_gravity = "center_horizontal"
+        android:text="최근 구매 이력이 없습니다." />
+
+    <TextView
+        android:id="@+id/recent_order2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="17sp"
+        android:layout_gravity = "center_horizontal"
+        android:text="최근 구매 이력이 없습니다." />
+
+    <TextView
+        android:id="@+id/recent_order3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="17sp"
+        android:layout_gravity = "center_horizontal"
+        android:text="최근 구매 이력이 없습니다." />
+
+    <TextView
+        android:id="@+id/recent_order4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="17sp"
+        android:layout_gravity = "center_horizontal"
+        android:text="최근 구매 이력이 없습니다." />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+</LinearLayout>

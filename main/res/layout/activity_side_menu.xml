@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#000000"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+        <View
+            android:layout_height="0dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            ></View>
+        <ImageButton
+            android:id="@+id/btn_cancel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/quit" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"></TextView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.7dp"
+            android:layout_alignParentBottom="true"
+            android:background="#202735"/>
+        <TextView
+            android:layout_height="200dp"
+            android:layout_width="match_parent"
+
+            ></TextView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/cafe"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="200dp"
+            >
+        <TextView
+            android:id="@+id/userName"
+            android:layout_height="50dp"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:text="Username"
+            android:gravity="center_vertical|right"
+            android:textSize="15dp"
+
+            ></TextView>
+
+            <TextView
+                android:id="@+id/userPoint"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="4"
+                android:text="UserPoint"
+                android:textSize="15dp"
+                android:gravity="center_vertical|right"></TextView>
+
+            <TextView
+                android:layout_height="50dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="P"
+                android:textSize="15dp"
+                android:gravity="center_vertical|left"
+                ></TextView>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_centerInParent="true"
+            android:background="#000000"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <Button
+                android:id="@+id/btn_pointCharge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:text="포인트 충전"
+                android:textSize="20dp"
+                android:background="#ffffff"
+                android:gravity="center_vertical|left"/>
+
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_centerInParent="true"
+            android:background="#000000"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <Button
+                android:id="@+id/btn_recent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:text="최근 주문 이력"
+                android:textSize="20dp"
+                android:background="#ffffff"
+
+                android:gravity="center_vertical|left"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_centerInParent="true"
+            android:background="#000000"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <Button
+                android:id="@+id/btn_revoke"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:text="회원 탈퇴"
+                android:textSize="20dp"
+                android:background="#ffffff"
+
+                android:gravity="center_vertical|left"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_centerInParent="true"
+            android:background="#000000"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:background="#000000"
+        android:layout_gravity="bottom"
+        android:gravity="center_vertical|right"
+        >
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/logout"></Button>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
